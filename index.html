@@ -1,98 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Ravi Ailani</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-	<script src="assets/jquery-3.1.1.min.js" type="text/javascript"></script>
-	<script src="assets/jquery.onepage-scroll.min.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/onepage-scroll.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>color.io</title>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script>
+	// Initialize Firebase
+	// TODO: Replace with your project's customized code snippet
+		var config = {
+		apiKey: " AIzaSyBLyr3ZixrIBtFA1z-b9ahqnUJ-XU3MM-A",
+		authDomain: "project-1-872c3.firebaseapp.com",
+		databaseURL: "https://project-1-872c3.firebaseio.com"
+		// ,storageBucket: "<BUCKET>.appspot.com",
+		// messagingSenderId: "<SENDER_ID>",
+		};
+		firebase.initializeApp(config);
+		
+	</script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+    	body{
+    		overflow: hidden;
+    	}
+    </style>
+
 </head>
+
 <body>
+<div id="blur">
+<div class="container">	
+<div class="row">
+   <div class="col-lg-4">
+       
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
 
-<div class="container">
-<section id="section1">
+<!--                     <img class="img-responsive" id="" src="img/profile.png" alt=""> -->
+                    <div class="intro-text">
+                        <span class="name">color.io</span>
+                        <!-- <hr class="star-light"> -->
+                        <!-- <br/> -->
+                        <span class="skills">Helps you extract colors from web !</span>
+                        <br/><br/><br/>
+                        <input type="text" class="urlInput" placeholder="Enter url here !" input-md" name="urlInput"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>       
+   </div> 
 
-<p class="title">Hello world!<br></p>
-<img id="boyImage" src="assets/images/boy.png"/>
 
-</section>
+    <div class="col-lg-offset-2 col-lg-6">
+        
+    <div class="contentArea">
+        dgjfdhgkjh
+
+    </div>
+
+    </div>
 
 
-<section id="section2">
-<p class="title">Bio<br></p>
-<div class="content">
-<img class="contentSideImage" src="assets/images/boy-bio.png"/><div class="contentText">The way to correct this is to use a CSS property called clear. This clears any floating elements and gets you back to the normal, default flow for browsers. The clear property can take four values: left, right, both, none. Because our first image was floated to the right, we want to clear to the right. We can add this to the second style</div>	
+
+
+
+    </div>
 </div>
-</section>
-
-
-<section id="section3">
-<p class="title">Education<br></p>
-<div class="content">
-<img class="contentSideImage" src="assets/images/school.png"  /><div class="contentText">The way to correct this is to use a CSS property called clear. This clears any floating elements and gets you back to the normal, default flow for browsers. The clear property can take four values: left, right, both, none. Because our first image was floated to the right, we want to clear to the right. We can add this to the second style</div>	
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>    
 </div>
-</section>
+</body>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script type="text/javascript">
+    	$("#facebookLogin").click(function(){
+		var provider = new firebase.auth.FacebookAuthProvider();
+		provider.addScope('user_birthday');
+		provider.setCustomParameters({
+  		'display': 'popup'
+		});
+		firebase.auth().signInWithPopup(provider).then(function(result) {
+		  // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+		  var token = result.credential.accessToken;
+		  // The signed-in user info.
+		  var user = result.user;
 
-<section id="section4">
-<p class="title">Work Experience<br></p>
-<div class="content">
-<img class="contentSideImage" src="assets/images/work.png"  /><div class="contentText">The way to correct this is to use a CSS property called clear. This clears any floating elements and gets you back to the normal, default flow for browsers. The clear property can take four values: left, right, both, none. Because our first image was floated to the right, we want to clear to the right. We can add this to the second style</div>	
-</div>
-</section>
+		  writeUserData(user.uid,user.displayName,user.email,user.photoURL);
+		  // ...
+		}).catch(function(error) {
+		  // Handle Errors here.
+		  console.log(error);
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  // The email of the user's account used.
+		  var email = error.email;
+		  // The firebase.auth.AuthCredential type that was used.
+		  var credential = error.credential;
+		  // ...
+		});
+	});
+    </script>
 
-<section id="section5">
-<p class="title">Hobbies<br></p>
-<div class="content">
-<img class="contentSideImage" src="assets/images/gym.png"  /><div class="contentText">The way to correct this is to use a CSS property called clear. This clears any floating elements and gets you back to the normal, default flow for browsers. The clear property can take four values: left, right, both, none. Because our first image was floated to the right, we want to clear to the right. We can add this to the second style</div>	
-</div>
-</section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-</div>
-<div id="nameBottom">Ravi Ailani<span class="tourEntry">Feel free to roam around ! use Arrow Keys (<=|=>) :)</span></div>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
-
-<script type="text/javascript">
-// 	range=document.getElementsByTagName("section");
-// 	currentSectionId=1;
-
-// 	$("body").keydown(function(e) {
-//   if(e.keyCode == 37) { // left
-//     $("#section1").animate({
-//       left: "-=980"
-//     });
-//   }
-
-//   else if(e.keyCode == 39) { // right
-//   	if(currentSectionId<5 && currentSectionId>=0)
-//   	{
-//   	x=1;
-//   	while(x<=range)
-//   	{
-//   		$("#section"+x).attr("visiblity","collapse");
-//   		x++;
-//   	}
-//     $("#section"+currentSectionId+1).attr("visiblity","visible");
-//     $("#section"+currentSectionId).animate({
-//       // left: "+=980"
-// 		height: '300px', opacity: '0',}, "fast"
-//     ); 
-//     currentSectionId+=1;
-//     $("#section"+currentSectionId).animate({
-//       // left: "+=980"
-// 		height: '1000px', opacity: '1',}, "fast");
-
-// //    alert(currentSectionId+1);
-//     // $("#section"+currentSectionId+1).attr("visiblity","visible");
-//   	}
-
-
-
-//   }
-// });
-
-$(".container").onepage_scroll();
-</script>
 
 </html>

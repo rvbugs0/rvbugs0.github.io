@@ -1,0 +1,93 @@
+body {
+  height: 100%;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+p {
+  font-size: 20px;
+}
+p.small {
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #18BC9C;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.img-centered {
+  margin: 0 auto;
+}
+
+
+body
+{
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  }
+
+#blur{
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+}
+  .navbar-custom {
+  /*background: #0288d1;*/
+background: #2d384a;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.urlInput{
+  color: #000;
+  width: 250px;
+}
+
+.contentArea
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+header {
+  color: white;
+}
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header img {
+
+  display: block;
+  margin: 0 auto 20px;
+}
+header .intro-text .name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 6em;
+}
+header .intro-text .skills {
+  font-size: 1.2em;
+  font-weight: 200;
+}
