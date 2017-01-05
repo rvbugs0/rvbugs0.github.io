@@ -11,7 +11,7 @@ function findColors(URL)
 {
 	 $.ajax({
 	 	type: 'GET',
-	    url: Modules.php,
+	    url: "Modules.php",
 		data:{"URL":URL},
 	    crossOrigin:true,
 	    crossDomain: true,
