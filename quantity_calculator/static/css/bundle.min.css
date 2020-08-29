@@ -446,6 +446,8 @@ input[type=radio]+label:before {
     margin-right: 20%
 
         }
+
+
 }
 
 
@@ -455,6 +457,11 @@ input[type=radio]+label:before {
     margin-left: 10%;
     margin-right: 1%
 
+        }
+
+                body
+        {
+            font-size: 18px;
         }
 }
 
