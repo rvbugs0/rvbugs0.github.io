@@ -17,7 +17,7 @@
 
 
 
-    <div class="container">
+    <div class="container-fluid">
         <h2 style="margin-top: 10px;">Risk Management for Trades </h2>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -25,57 +25,84 @@
                 <div class="row">
                     <div class="col-lg-3 col-sm-12">
                         <label>RISK PER TRADE</label>
-                        <input type="number" min="0" id="loss" oninput="runCalculation()" value="100" class="delivery del_bp">
+                        <input type="number" min="0" id="loss" oninput="runCalculation()" value="100" class="form-group">
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <label>POSITION</label>
-                        <input type="number" min="0" id="price" oninput="runCalculation()" value="" class="delivery del_sp">
+                        <input type="number" min="0" id="price" oninput="runCalculation()" value="" class="form-group">
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <label>STOP LOSS AT</label>
-                        <input type="number" min="0" id="stoploss" oninput="runCalculation()" class="delivery del_qty">
+                        <input type="number" min="0" id="stoploss" oninput="runCalculation()" class="form-group">
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <label>Risk to Reward (1:?)</label>
-                        <input type="number" min="0" id="reward" value="2" oninput="runCalculation()" class="delivery del_qty">
+                        <input type="number" min="0" id="reward" value="2" oninput="runCalculation()" class="form-group">
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-sm-12">
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Difference</label>
-                    <span class="six columns profit" id="difference">0</span>
+                <hr>
+                <div class="row" id="del_profit">
+                    <div class="col-lg-6 col-sm-6">
+                        <label class="six columns">Difference</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 right">
+                        <span class="six columns profit" id="difference">0</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" id="del_profit">
+                    <div class="col-lg-6 col-sm-6">
+                        <label class="six columns">Quantity</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 right">
+                        <span class="six columns profit" id="quantity">0</span>
+                    </div>
                 </div>
 
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Quantity</label>
-                    <span class="six columns profit" id="quantity">0</span>
+                <hr>
+                <div class="row" id="del_profit">
+                    <div class="col-lg-6 col-sm-6">
+                        <label class="six columns">Potential loss</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 right">
+                        <span class="six columns profit neg" id="potLoss">0</span>
+                    </div>
                 </div>
 
-
-                <div class="row net-profit equity-list">
-                    <label class="six columns">Potential loss</label>
-                    <span class="six columns profit neg" id="potLoss">0</span>
+                <hr>
+                <div class="row" id="del_profit">
+                    <div class="col-lg-6 col-sm-6">
+                        <label class="six columns">Target wrt R/R ratio</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 right">
+                        <span class="six columns profit" id="target">0</span>
+                    </div>
                 </div>
 
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Target wrt R/R ratio</label>
-                    <span class="six columns profit" id="target">0</span>
+                <hr>
+
+                <div class="row" id="del_profit">
+                    <div class="col-lg-6 col-sm-6">
+                        <label class="six columns">Net Profit wrt R/R ratio</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 right">
+                        <span class="six columns profit">
+                            <input class="six columns profit pos" style="color: #00cc00; font-size: 18px;" placeholder="0" id="potProfit" oninput="calRiskReward()">
+                        </span>
+                    </div>
                 </div>
-
-
-                <div class="row net-profit equity-list">
-                    <label class="six columns">Net Profit wrt R/R ratio</label>
-                    <span class="six columns profit">
-                        <input class="six columns profit pos" style="color: #00cc00; font-size: 18px;" placeholder="0" id="potProfit" oninput="calRiskReward()">
-                    </span>
+                <hr>
+                <div class="row" id="del_profit">
+                    <div class="col-lg-6 col-sm-6">
+                        <label class="six columns">Exit at profit</label>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 right">
+                        <span class="six columns profit pos" style="color: #00cc00; font-size: 18px;" id="exitProfit">0</span>
+                    </div>
                 </div>
-
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Exit at profit</label>
-                    <span class="six columns profit pos" style="color: #00cc00; font-size: 18px;" id="exitProfit">0</span>
-                </div>
-
+                <hr>
             </div>
 
 
