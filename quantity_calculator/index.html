@@ -18,7 +18,7 @@
 
 
     <div class="container-fluid">
-        <h2 style="margin-top: 10px;">Risk Management for Trades </h2>
+        <h2>Risk Management for Trades </h2>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h5 class="">Quantity Calculator - For Intraday Equity</h5>
@@ -88,7 +88,7 @@
                         <label class="six columns">Net Profit wrt R/R ratio</label>
                     </div>
                     <div class="col-lg-6 col-sm-6 right">
-                    <input class="form-group" style="color: #00cc00;border: 0px; font-size: 18px;text-align: right;height: 100%;" placeholder="0" id="potProfit" oninput="calRiskReward()">
+                    <input class="form-group" style="color: #00cc00; padding-right:2px;border-color:#eee;border-width: 1px; border-style:double; #ccc; font-size: 18px;text-align: right;height: 100%;" placeholder="0" id="potProfit" oninput="calRiskReward()">
                         
                     </div>
                 </div>
@@ -108,76 +108,12 @@
 
 
 
-            <!-- <div class="brokerage-columns calc-wrapper">
-                <h5 class="equity-head">Quantity Calculator - For Intraday Equity</h5>
-                <div class="row calc-inputs around">
-                    <div class="three col-md-4 col-sm-12 brokerage-calculator-input">
-                        <label>RISK PER TRADE</label>
-                        <input type="number" min="0" id="loss" oninput="runCalculation()" value="100" class="delivery del_bp">
-                    </div>
-                    <div class="three col-md-4 col-sm-12 brokerage-calculator-input">
-                        <label>POSITION</label>
-                        <input type="number" min="0" id="price" oninput="runCalculation()" value="" class="delivery del_sp">
-                    </div>
-                    <div class="three col-md-4 col-sm-12  brokerage-calculator-input">
-                        <label>STOP LOSS AT</label>
-                        <input type="number" min="0" id="stoploss" oninput="runCalculation()" class="delivery del_qty">
-                    </div>
-                    <div class="three col-md-4 col-sm-12 brokerage-calculator-input">
-                        <label>Risk to Reward (1 : ?)</label>
-                        <input type="number" min="0" id="reward" value="2" oninput="runCalculation()" class="delivery del_qty">
-                    </div>
-                </div>
-
-
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Difference</label>
-                    <span class="six columns profit" id="difference">0</span>
-                </div>
-
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Quantity</label>
-                    <span class="six columns profit" id="quantity">0</span>
-                </div>
-
-
-                <div class="row net-profit equity-list">
-                    <label class="six columns">Potential loss</label>
-                    <span class="six columns profit neg" id="potLoss">0</span>
-                </div>
-
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Target wrt R/R ratio</label>
-                    <span class="six columns profit" id="target">0</span>
-                </div>
-
-
-                <div class="row net-profit equity-list">
-                    <label class="six columns">Net Profit wrt R/R ratio</label>
-                    <span class="six columns profit">
-                        <input class="six columns profit pos" style="color: #00cc00; font-size: 18px;" placeholder="0" id="potProfit" oninput="calRiskReward()">
-                    </span>
-                </div>
-
-                <div class="row net-profit equity-list" id="del_profit">
-                    <label class="six columns">Exit at profit</label>
-                    <span class="six columns profit pos" style="color: #00cc00; font-size: 18px;" id="exitProfit">0</span>
-                </div>
-
-
-
-            </div>
- -->
-
 
 
         </div>
 
     </div>
 
-
-    <script type="text/javascript">var OFFICES = "";</script>
-    <!-- <script src="static/js/bundle.min.js"></script> -->
 
     <script type="text/javascript" src="static/js/brokerage.min.js"></script>
 
