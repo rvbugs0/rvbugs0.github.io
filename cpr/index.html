@@ -1,0 +1,218 @@
+<html>
+<head>
+
+<br>
+<center><h1> Pivot Points</h1></center>
+</head>
+
+<style>
+@font-face {
+font-family: "Open Sans";
+src: url("styles/fonts/OpenSans-Bold.ttf");
+
+}
+body
+{
+font-family: 'Open Sans', sans-serif;
+background : #d9e7ff;
+}
+.inputField
+{
+font-size: 25px;
+width:250px;
+}
+.inputLabel
+{
+font-size: 25px;
+}
+h2
+{
+color : #4d8eff;
+}
+
+table, th, td {
+	background :#fff;
+  border: 1px solid gray;
+}
+
+td{
+padding: 20px;
+}
+
+#main
+{
+margin-top: 25px;
+margin-left:50px;
+}
+</style>
+
+
+
+<body>
+<center>
+<div id="main">
+
+<table>
+<tr>
+		<td >
+			<form id="cprForm" >
+			<label class="inputLabel" for="high">Prev. High:</label><br>
+			<input class="inputField" placeholder="0" type="number" id="high"   oninput="runCalculation()" name="high"><br><br>
+			<label class="inputLabel" for="close">Prev. Close:</label><br>
+			<input class="inputField" placeholder="0" type="number" id="close" oninput="runCalculation()" name="close"><br><br>
+			<label class="inputLabel" for="low">Prev. Low:</label><br>
+			<input class="inputField" placeholder="0" type="number" id="low" oninput="runCalculation()" name="low"><br><br>
+			</form>
+		</td>
+
+
+		<td>
+			<table>
+
+				<th colspan="3"><h1>Standard</h1></th>
+				<tr>
+					<td>
+						<h2>Upper B.	: </h2> <h3 id="upperBoundary"></h3>
+						<h2>C. Pivot	: </h2> <h3 id="centralPivot"></h3>
+						<h2>Lower B.	: </h2> <h3 id="lowerBoundary"></h3>
+					</td>
+					
+					<td>
+						<h2>R3	: </h2> <h3 id="r3"></h3>
+						<h2>R2	: </h2> <h3 id="r2"></h3>
+						<h2>R1	: </h2> <h3 id="r1"></h3>
+					</td>
+
+					<td>
+						<h2>S1	: </h2> <h3 id="s1"></h3>
+						<h2>S2	: </h2> <h3 id="s2"></h3>
+						<h2>S3	: </h2> <h3 id="s3"></h3>
+					</td>
+				</tr>
+			</table>
+		</td>
+
+
+		<td>
+			<table>
+				<th colspan="3"><h1>Fibonacci</h1></th>
+				<tr>
+					<td>
+						<h2>C. Pivot	: </h2> <h3 id="fcentralPivot"></h3>
+					</td>
+					
+					<td>
+						<h2>R3	: </h2> <h3 id="fr3"></h3>
+						<h2>R2	: </h2> <h3 id="fr2"></h3>
+						<h2>R1	: </h2> <h3 id="fr1"></h3>
+					</td>
+
+					<td>
+						<h2>S1	: </h2> <h3 id="fs1"></h3>
+						<h2>S2	: </h2> <h3 id="fs2"></h3>
+						<h2>S3	: </h2> <h3 id="fs3"></h3>
+					</td>
+				</tr>
+			</table>
+		</td>
+
+</tr>
+</table>
+
+<div>
+<center>
+</body>
+
+
+<script>
+
+
+function runCalculation()
+{
+
+var high = parseFloat(document.getElementById("high").value);
+var close = parseFloat(document.getElementById("close").value); 
+var low = parseFloat(document.getElementById("low").value);
+
+
+var upperBoundary= document.getElementById("upperBoundary");
+var centralPivot= document.getElementById("centralPivot");
+var lowerBoundary = document.getElementById("lowerBoundary");
+
+var fcentralPivot= document.getElementById("fcentralPivot");
+
+
+var cp = (high+close+low)/3;
+var lb = (high+low)/2;
+var ub = (2*cp) - lb;
+
+
+if(lb>ub)
+{ 
+var x= ub;
+ub=lb;
+lb=x;
+}
+
+upperBoundary.innerHTML =ub.toFixed(2);
+centralPivot.innerHTML =cp.toFixed(2);
+lowerBoundary.innerHTML =lb.toFixed(2);
+
+
+var r1,r2,r3,s1,s2,s3;
+
+r1 = (2*cp)- low;
+r2 = cp + high - low;
+r3 = r1+ high- low;
+
+document.getElementById("r1").innerHTML =r1.toFixed(2);
+document.getElementById("r2").innerHTML =r2.toFixed(2);
+document.getElementById("r3").innerHTML =r3.toFixed(2);
+
+
+s1 = (2*cp)-high;
+s2 = cp - (high - low);
+s3 = s1 - (high - low);
+
+document.getElementById("s1").innerHTML = s1.toFixed(2);
+document.getElementById("s2").innerHTML = s2.toFixed(2);
+document.getElementById("s3").innerHTML = s3.toFixed(2);
+
+
+var fcp,fs1,fs2,fr1,fr2,fr3,diff;
+fcp = parseFloat(cp);
+diff = high-low;
+
+
+var rt1,rt2,rt3;
+rt1 = parseFloat((0.382)*diff);
+rt2 = parseFloat((0.618)*diff);
+rt3 = parseFloat(1*diff);
+
+fs1 = parseFloat(fcp - rt1); 
+fs2 = parseFloat(fcp - rt2);
+fs3 = parseFloat(fcp - rt3);
+
+
+
+
+fr1 = parseFloat(fcp+rt1); 
+fr2 = parseFloat(fcp + rt2); 
+fr3 = parseFloat(fcp + rt3); 
+
+fcentralPivot.innerHTML = fcp.toFixed(2);
+
+document.getElementById("fs1").innerHTML = fs1.toFixed(2);
+document.getElementById("fs2").innerHTML = fs2.toFixed(2);
+document.getElementById("fs3").innerHTML = fs3.toFixed(2);
+
+document.getElementById("fr1").innerHTML = fr1.toFixed(2);
+document.getElementById("fr2").innerHTML = fr2.toFixed(2);
+document.getElementById("fr3").innerHTML = fr3.toFixed(2);
+
+
+
+
+}
+</script>
+</html>
