@@ -53,3 +53,12 @@ input[type='number'].form-group
 }
 
 
+input.result
+{
+
+	width:auto;
+	padding: 0px;
+	text-align: right;	
+	max-width: 150px;	
+	padding-right: 1px;
+}
