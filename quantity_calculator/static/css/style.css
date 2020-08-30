@@ -52,3 +52,8 @@ input[type='number'].form-group
 	font-size: 18px;
 }
 
+
+h1.col-md-12
+{
+font-size: 5em;
+}
