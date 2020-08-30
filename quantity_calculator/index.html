@@ -3,119 +3,121 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Brokerage calculator</title>
+	<meta charset="utf-8" />
+	<title>Brokerage calculator</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Inter:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/bundle.min.css" />
-    <link rel="stylesheet" href="static/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Inter:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+
+	<link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
 
 
-    <div class="container-fluid">
-        <h2>Risk Management for Trades </h2>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h5 class="">Quantity Calculator - For Intraday Equity</h5>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-12">
-                        <label>RISK PER TRADE</label>
-                        <input type="number" min="0" id="loss" oninput="runCalculation()" value="100" class="form-group">
-                    </div>
-                    <div class="col-lg-3 col-sm-12">
-                        <label>POSITION</label>
-                        <input type="number" min="0" id="price" oninput="runCalculation()" value="" class="form-group">
-                    </div>
-                    <div class="col-lg-3 col-sm-12">
-                        <label>STOP LOSS AT</label>
-                        <input type="number" min="0" id="stoploss" oninput="runCalculation()" class="form-group">
-                    </div>
-                    <div class="col-lg-3 col-sm-12">
-                        <label>Risk to Reward (1:?)</label>
-                        <input type="number" min="0" id="reward" value="2" oninput="runCalculation()" class="form-group">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-sm-12">
-                <hr>
-                <div class="row" id="del_profit">
-                    <div class="col-lg-6 col-sm-6">
-                        <label class="six columns">Difference</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 right">
-                        <span class="six columns profit" id="difference">0</span>
-                    </div>
-                </div>
-                <hr>
-                <div class="row" id="del_profit">
-                    <div class="col-lg-6 col-sm-6">
-                        <label class="six columns">Quantity</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 right">
-                        <span class="six columns profit" id="quantity">0</span>
-                    </div>
-                </div>
+	<div class="container-fluid">
+		<div class="offset-lg-2 row col-lg-8 col-md-12 col-sm-12 col-xs-12">
 
-                <hr>
-                <div class="row" id="del_profit">
-                    <div class="col-lg-6 col-sm-6">
-                        <label class="six columns">Potential loss</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 right">
-                        <span class="six columns profit neg" id="potLoss">0</span>
-                    </div>
-                </div>
+			<h2 class="col-lg-12">Risk Management for Trades </h2>        
+			<h5 class="col-lg-12">Quantity Calculator - For Intraday Equity</h5><br>
+			<br>
+		</div>
 
-                <hr>
-                <div class="row" id="del_profit">
-                    <div class="col-lg-6 col-sm-6">
-                        <label class="six columns">Target wrt R/R ratio</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 right">
-                        <span class="six columns profit" id="target">0</span>
-                    </div>
-                </div>
+		<div class="offset-lg-2 row col-lg-8 col-md-12 col-sm-12 col-xs-12">
 
-                <hr>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<label class="label">RISK PER TRADE</label>
+				<input type="number" min="0" id="loss" oninput="runCalculation()" value="100" class="form-group">
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<label  class="label">POSITION</label>
+				<input type="number" min="0" id="price" oninput="runCalculation()" value="" class="form-group">
+			</div>
 
-                <div class="row" id="del_profit">
-                    <div class="col-lg-6 col-sm-6">
-                        <label class="six columns">Net Profit wrt R/R ratio</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 right">
-                    <input class="form-group" style="color: #00cc00; padding-right:2px;border-color:#eee;border-width: 1px; border-style:double; #ccc; font-size: 18px;text-align: right;height: 100%;" placeholder="0" id="potProfit" oninput="calRiskReward()">
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="row" id="del_profit">
-                    <div class="col-lg-6 col-sm-6">
-                        <label class="six columns">Exit at profit</label>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 right">
-                        <span class="six columns profit pos" style="color: #00cc00; font-size: 18px;" id="exitProfit">0</span>
-                    </div>
-                </div>
-                <hr>
-            </div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<label class="label">STOP LOSS AT</label>
+				<input type="number" min="0" id="stoploss" oninput="runCalculation()" class="form-group">
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<label class="label">Risk/Reward (1:?)</label>
+				<input type="number" min="0" id="reward" value="2" oninput="runCalculation()" class="form-group">
+			</div>
+
+		</div>
 
 
 
+		<div class="row offset-lg-2  col-lg-8 offset-lg-2 col-md-12 col-sm-12 col-xs-12">
+
+			<hr class="col-lg-12">
+
+			<div class="row col-lg-12 col-xs-12 entry">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+					<label class="label-info">Difference</label>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 right">
+					<span  class="result" id="difference">0</span>
+				</div>
+			</div>
+
+
+			<div class="row col-lg-12 entry">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+					<label class="label-info">Quantity</label>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 right">
+					<span class="result" id="quantity">0</span>
+				</div>
+			</div>
 
 
 
+			<div class="row col-lg-12 entry">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+					<label class="label-info">Potential loss</label>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 right">
+					<span class="result" id="potLoss">0</span>
+				</div>
+			</div>
 
-        </div>
+			<div class="row col-lg-12 entry">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+					<label class="label-info">Target wrt R/R ratio</label>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 right">
+					<span class="result" id="target">0</span>
+				</div>
+			</div>
 
-    </div>
+
+			<div class="row col-lg-12 entry">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+					<label class="label-info">Net Profit wrt R/R ratio</label>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 right">
+					<input class="result right" style="color: #00cc00; font-size: 18px;" placeholder="0" id="potProfit" oninput="calRiskReward()">
+
+				</div>
+			</div>
+
+			<div class="row col-lg-12 entry">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+					<label class="label-info">Exit at profit</label>
+				</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 right">
+					<span class="result" style="color: #00cc00; font-size: 18px;" id="exitProfit">0</span>
+				</div>
+			</div>
+		</div>
 
 
-    <script type="text/javascript" src="static/js/brokerage.min.js"></script>
+	</div>
+
+
+	<script type="text/javascript" src="static/js/brokerage.min.js"></script>
 
 
 </body>

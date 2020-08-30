@@ -1,9 +1,10 @@
 body {
-    padding:  20px;
+    padding-top:  15px;
     width: 100%;
 }
 
 .right {
+	margin-right: 0px;
     text-align: right;
 }
 
@@ -11,3 +12,43 @@ hr {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
+.label
+{
+	display: block;
+	font-size: 1em;
+	font-weight: 600;
+	color: #bd1a1a;
+}
+
+.label-info
+{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #000;
+}
+
+.entry
+{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.result
+{
+
+   font-size: 1.1em;
+    font-weight: 500;
+    color: #000;	
+}
+
+input[type='number'].form-group
+{
+	width: 100%;
+	height: 50px;
+	padding: 5px;
+	color: #000;
+	font-weight: 500;
+	font-size: 18px;
+}
+
