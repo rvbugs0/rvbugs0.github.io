@@ -1,0 +1,71 @@
+
+a:link, a:active,a:visited {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+ 
+
+body
+{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  	height: 100vh;
+  	position: relative;
+    background-repeat: no-repeat!important;
+    /*background-image: url(../images/background.jpg)!important;*/
+    background-color: rgba(255,255,255,1)!important;
+    background-size: cover;
+}
+
+a
+{
+	color: :#000;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.tab
+{
+	margin-top: 15px;
+}
+
+.pngs
+{
+
+max-height: 50px;
+max-width: 50px; 
+	
+}
+
+h5	
+{
+
+	display: inline;
+	
+}
+
+
+
+
+
+
+
+
+
+
