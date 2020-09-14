@@ -5,6 +5,12 @@
  text-decoration: none;
 }
 
+nav {
+    /*font-family: 'Raleway', sans-serif;*/
+font-family: 'Questrial', sans-serif;
+    /*text-transform: uppercase;*/
+}
+
 .white-links a:hover {
  color: yellow;
  background-color: transparent;
@@ -26,9 +32,10 @@
 body
 {
  color: #fff;
- font-family: 'Raleway', sans-serif;
+ /*font-family: 'Raleway', sans-serif;*/
  background-color: #fff;
  /*https://www.calgarydefence.com/*/
+font-family: 'Questrial', sans-serif;
 }
 
 
@@ -64,7 +71,7 @@ position: absolute;
 { width: 100%;
  height: 100vh;
  position: relative;
-   padding: 15px;
+   padding: 48px;
    color: #000;
 }
 
@@ -72,16 +79,16 @@ position: absolute;
 section .title
 {
    font-style: bold;
-   font-weight: 900;
-   font-size: 40px;
-   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),  1px -1px 0 rgba(255, 255, 255, 0.9); 
+   font-weight: 700;
+   font-size: 32px;
+   
 }
 
 #about-image
 {
 
     background-size: cover;
-    max-height: 500px;
+    max-height: 440px;
     
 }
 
@@ -125,9 +132,9 @@ h5
 .emboss
 {
  font-size: 64px;
- font-weight: 700;
- font-family: 'Satisfy', cursive;
- /*font-family: 'Montserrat', sans-serif;*/
+ font-weight: 400;
+ /*font-family: 'Satisfy', cursive;*/
+ font-family: 'Kanit', sans-serif;
  text-shadow: -3px 1px 1px rgba(0, 0, 0, 0.5),  1px -1px 0 rgba(255, 255, 255, 0.9); 
 }
 
