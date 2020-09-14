@@ -192,5 +192,12 @@ h5
  /*font-family: 'Satisfy', cursive;*/
  font-family: 'Kanit', sans-serif;
  text-shadow: -3px 1px 1px rgba(0, 0, 0, 0.5),  1px -1px 0 rgba(255, 255, 255, 0.9); 
+      animation:brath 10s  linear infinite;
 }
 
+   @keyframes brath{
+      0%{transform: scale(.9);}
+      25%{transform: scale(1);}
+      60%{transform: scale(.9);}
+      100%{transform: scale(1);}
+   }
