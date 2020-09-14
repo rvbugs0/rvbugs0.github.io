@@ -1,22 +1,27 @@
 
-a:link, a:active,a:visited {
+.white-links a:link, a:active,a:visited {
  color: #fff;
  background-color: transparent;
  text-decoration: none;
 }
 
-a:hover {
- color: blue;
+.white-links a:hover {
+ color: yellow;
  background-color: transparent;
- text-decoration: underline;
+ text-decoration: none;
 }
-
 
 .navpngs
 {
  max-height: 20px;
  max-width: 20px;
 } 
+
+.navpngs:hover 
+{
+   max-height: 16px;
+   max-width: 16px;
+}
 
 body
 {
@@ -27,20 +32,18 @@ body
 }
 
 
-#main-cover
+#hero-cover
 {
  width: 100%;
  height: 100vh;
- background-image: url(../images/background.jpg)!important;
+ position: relative;
+ background-image: url(../images/kn.jpg)!important;
  background-size: cover;
  background-repeat: no-repeat!important;
- position: relative;
+ }
 
-}
-
-#main
+#hero
 {
-
  width: 100%;
  height: 100vh;
 background: rgba(0,0,0,0.65);
@@ -56,6 +59,31 @@ position: absolute;
     padding: 0 15px;
 }
 
+
+#main
+{ width: 100%;
+ height: 100vh;
+ position: relative;
+   padding: 15px;
+   color: #000;
+}
+
+
+section .title
+{
+   font-style: bold;
+   font-weight: 900;
+   font-size: 40px;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),  1px -1px 0 rgba(255, 255, 255, 0.9); 
+}
+
+#about-image
+{
+
+    background-size: cover;
+    max-height: 500px;
+    
+}
 
 .center
 {
@@ -100,8 +128,11 @@ h5
  font-weight: 700;
  font-family: 'Satisfy', cursive;
  /*font-family: 'Montserrat', sans-serif;*/
- text-shadow: -3px 1px 1px rgba(0, 0, 0, 0.5), 
- 1px -1px 0 rgba(255, 255, 255, 0.9); 
+ text-shadow: -3px 1px 1px rgba(0, 0, 0, 0.5),  1px -1px 0 rgba(255, 255, 255, 0.9); 
 }
 
+.emboss:hover
+{
+   font-size: 68px;
+}
 
