@@ -27198,58 +27198,79 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _cover1Jpg = require("../../assets/images/cover1.jpg");
+var _cover1JpgDefault = parcelHelpers.interopDefault(_cover1Jpg);
+var _profileJpeg = require("../../assets/images/profile.jpeg");
+var _profileJpegDefault = parcelHelpers.interopDefault(_profileJpeg);
 const JumbotronComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "jumbotron",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "topImage",
-                src: "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/270630427_4735732053152689_3094655467926111785_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=z5sev-4RZr8AX-0G3uN&_nc_ht=scontent-dfw5-1.xx&oh=00_AfD15FYkyNs7wbDojYt9n_xekv4PtAXoRfRuNg44XO2oXg&oe=64BD094B"
+                src: (0, _cover1JpgDefault.default)
             }, void 0, false, {
                 fileName: "src/components/JumbotronComponent.js",
-                lineNumber: 4,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/123123171_3475086915883882_8004794511218454056_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pBiu66eDL-YAX_WGGPR&_nc_ht=scontent-dfw5-1.xx&oh=00_AfASMUp88ckZnHmo9FbISHS7cB2TC5Yon3pz5MAfGWUgYQ&oe=64DE5FFD",
-                className: "circular-image"
-            }, void 0, false, {
-                fileName: "src/components/JumbotronComponent.js",
-                lineNumber: 5,
-                columnNumber: 9
+                lineNumber: 7,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "jumbotron-content",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "jumbo-title",
-                        children: "Ravi Ailani | Software Developer"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _profileJpegDefault.default),
+                        className: "circular-image"
                     }, void 0, false, {
                         fileName: "src/components/JumbotronComponent.js",
-                        lineNumber: 10,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            maxWidth: "800px",
-                            fontWeight: "bold"
-                        },
-                        children: '"I write code that magically works until it doesn\'t, and then I use my superpowers to blame the hardware."'
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "jumbo-title",
+                                children: "Ravi Ailani | Software Engineer"
+                            }, void 0, false, {
+                                fileName: "src/components/JumbotronComponent.js",
+                                lineNumber: 17,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    maxWidth: "800px"
+                                },
+                                children: [
+                                    '"I write code that magically works until it doesn\'t, and then I use my superpowers to blame the hardware." - ',
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        children: "Joe Dohn"
+                                    }, void 0, false, {
+                                        fileName: "src/components/JumbotronComponent.js",
+                                        lineNumber: 20,
+                                        columnNumber: 49
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/JumbotronComponent.js",
+                                lineNumber: 18,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/JumbotronComponent.js",
-                        lineNumber: 11,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/JumbotronComponent.js",
-                lineNumber: 9,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                         fileName: "src/components/JumbotronComponent.js",
-                        lineNumber: 17,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
@@ -27260,7 +27281,7 @@ const JumbotronComponent = ()=>{
                                 d: "M0 0 L30 32 L60 0"
                             }, void 0, false, {
                                 fileName: "src/components/JumbotronComponent.js",
-                                lineNumber: 19,
+                                lineNumber: 29,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -27268,7 +27289,7 @@ const JumbotronComponent = ()=>{
                                 d: "M0 20 L30 52 L60 20"
                             }, void 0, false, {
                                 fileName: "src/components/JumbotronComponent.js",
-                                lineNumber: 20,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -27276,25 +27297,25 @@ const JumbotronComponent = ()=>{
                                 d: "M0 40 L30 72 L60 40"
                             }, void 0, false, {
                                 fileName: "src/components/JumbotronComponent.js",
-                                lineNumber: 21,
+                                lineNumber: 31,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/JumbotronComponent.js",
-                        lineNumber: 18,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/JumbotronComponent.js",
-                lineNumber: 16,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/JumbotronComponent.js",
-        lineNumber: 3,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
@@ -27308,7 +27329,48 @@ $RefreshReg$(_c, "JumbotronComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../assets/images/cover1.jpg":"en5sq","../../assets/images/profile.jpeg":"9GOJ2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"en5sq":[function(require,module,exports) {
+module.exports = require("69eaeace0bf7ea3f").getBundleURL("lly8x") + "cover1.fbcde6f8.jpg" + "?" + Date.now();
+
+},{"69eaeace0bf7ea3f":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"9GOJ2":[function(require,module,exports) {
+module.exports = require("13477a19e0f16b38").getBundleURL("lly8x") + "profile.8c27bdaf.jpeg" + "?" + Date.now();
+
+},{"13477a19e0f16b38":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27574,6 +27636,16 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _githubPng = require("../../assets/images/github.png");
+var _githubPngDefault = parcelHelpers.interopDefault(_githubPng);
+var _twitterPng = require("../../assets/images/twitter.png");
+var _twitterPngDefault = parcelHelpers.interopDefault(_twitterPng);
+var _instagramPng = require("../../assets/images/instagram.png");
+var _instagramPngDefault = parcelHelpers.interopDefault(_instagramPng);
+var _emailPng = require("../../assets/images/email.png");
+var _emailPngDefault = parcelHelpers.interopDefault(_emailPng);
+var _linkedinPng = require("../../assets/images/linkedin.png");
+var _linkedinPngDefault = parcelHelpers.interopDefault(_linkedinPng);
 const FooterComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "footer",
@@ -27581,89 +27653,148 @@ const FooterComponent = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "social-link",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "social-icon",
-                            src: "https://img.icons8.com/stickers/100/twitter.png",
-                            alt: "twitter--v1"
-                        }, void 0, false, {
-                            fileName: "src/components/FooterComponent.js",
-                            lineNumber: 8,
-                            columnNumber: 37
-                        }, undefined),
-                        "Twitter"
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://twitter.com/iraviailani",
+                        target: "_new",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "social-icon",
+                                src: (0, _twitterPngDefault.default),
+                                alt: "twitter--v1"
+                            }, void 0, false, {
+                                fileName: "src/components/FooterComponent.js",
+                                lineNumber: 15,
+                                columnNumber: 93
+                            }, undefined),
+                            "Twitter"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FooterComponent.js",
+                        lineNumber: 15,
+                        columnNumber: 37
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/components/FooterComponent.js",
-                    lineNumber: 8,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "social-link",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "social-icon",
-                            src: "https://img.icons8.com/plasticine/100/instagram-new--v2.png",
-                            alt: "instagram-new--v1"
-                        }, void 0, false, {
-                            fileName: "src/components/FooterComponent.js",
-                            lineNumber: 9,
-                            columnNumber: 37
-                        }, undefined),
-                        "Instagram"
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.instagram.com/iraviailani/",
+                        target: "_new",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "social-icon",
+                                src: (0, _instagramPngDefault.default),
+                                alt: "instagram-new--v1"
+                            }, void 0, false, {
+                                fileName: "src/components/FooterComponent.js",
+                                lineNumber: 16,
+                                columnNumber: 100
+                            }, undefined),
+                            "Instagram"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FooterComponent.js",
+                        lineNumber: 16,
+                        columnNumber: 37
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/components/FooterComponent.js",
-                    lineNumber: 9,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "social-link",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "social-icon",
-                            src: "https://img.icons8.com/fluency/96/linkedin.png",
-                            alt: "linkedin-new--v1"
-                        }, void 0, false, {
-                            fileName: "src/components/FooterComponent.js",
-                            lineNumber: 10,
-                            columnNumber: 37
-                        }, undefined),
-                        "LinkedIn"
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.linkedin.com/in/railani1/",
+                        target: "_new",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "social-icon",
+                                src: (0, _linkedinPngDefault.default),
+                                alt: "linkedin-new--v1"
+                            }, void 0, false, {
+                                fileName: "src/components/FooterComponent.js",
+                                lineNumber: 17,
+                                columnNumber: 99
+                            }, undefined),
+                            "LinkedIn"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FooterComponent.js",
+                        lineNumber: 17,
+                        columnNumber: 37
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/components/FooterComponent.js",
-                    lineNumber: 10,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "social-link",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "social-icon",
-                            src: "https://img.icons8.com/fluency/96/filled-message.png",
-                            alt: "gmail-new--v1"
-                        }, void 0, false, {
-                            fileName: "src/components/FooterComponent.js",
-                            lineNumber: 11,
-                            columnNumber: 37
-                        }, undefined),
-                        "Email"
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "mailto:iraviailani@gmail.com",
+                        target: "_new",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "social-icon",
+                                src: (0, _githubPngDefault.default),
+                                alt: "github"
+                            }, void 0, false, {
+                                fileName: "src/components/FooterComponent.js",
+                                lineNumber: 18,
+                                columnNumber: 90
+                            }, undefined),
+                            "GitHub"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FooterComponent.js",
+                        lineNumber: 18,
+                        columnNumber: 37
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/components/FooterComponent.js",
-                    lineNumber: 11,
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "social-link",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "mailto:iraviailani@gmail.com",
+                        target: "_new",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                className: "social-icon",
+                                src: (0, _emailPngDefault.default),
+                                alt: "gmail-new--v1"
+                            }, void 0, false, {
+                                fileName: "src/components/FooterComponent.js",
+                                lineNumber: 19,
+                                columnNumber: 90
+                            }, undefined),
+                            "Email"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/FooterComponent.js",
+                        lineNumber: 19,
+                        columnNumber: 37
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/FooterComponent.js",
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/FooterComponent.js",
-            lineNumber: 7,
+            lineNumber: 14,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/FooterComponent.js",
-        lineNumber: 3,
+        lineNumber: 10,
         columnNumber: 12
     }, undefined);
 };
@@ -27677,6 +27808,21 @@ $RefreshReg$(_c, "FooterComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire421d")
+},{"react/jsx-dev-runtime":"iTorj","../../assets/images/github.png":"5wSOB","../../assets/images/twitter.png":"9V472","../../assets/images/instagram.png":"bJJFA","../../assets/images/email.png":"i0Iby","../../assets/images/linkedin.png":"hgbhq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5wSOB":[function(require,module,exports) {
+module.exports = require("bb16c7e7fda3cd67").getBundleURL("lly8x") + "github.dc0dd2e9.png" + "?" + Date.now();
+
+},{"bb16c7e7fda3cd67":"lgJ39"}],"9V472":[function(require,module,exports) {
+module.exports = require("45b60698184d4bbe").getBundleURL("lly8x") + "twitter.be1751c5.png" + "?" + Date.now();
+
+},{"45b60698184d4bbe":"lgJ39"}],"bJJFA":[function(require,module,exports) {
+module.exports = require("36069c8c79b3358c").getBundleURL("lly8x") + "instagram.81d263e1.png" + "?" + Date.now();
+
+},{"36069c8c79b3358c":"lgJ39"}],"i0Iby":[function(require,module,exports) {
+module.exports = require("5cc6a01d1929d20e").getBundleURL("lly8x") + "email.30f5fe58.png" + "?" + Date.now();
+
+},{"5cc6a01d1929d20e":"lgJ39"}],"hgbhq":[function(require,module,exports) {
+module.exports = require("ebffe180ad05e5b2").getBundleURL("lly8x") + "linkedin.fed0ac9f.png" + "?" + Date.now();
+
+},{"ebffe180ad05e5b2":"lgJ39"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire421d")
 
 //# sourceMappingURL=index.7826abd7.js.map
