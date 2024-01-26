@@ -1,0 +1,2 @@
+.arrows{width:60px;height:72px;margin-left:-30px;bottom:20px;left:50%}.arrows path{stroke:#231557;fill:#0000;stroke-width:2px;animation:2s infinite arrow}@keyframes arrow{0%{opacity:0}40%{opacity:1}80%{opacity:0}to{opacity:0}}.arrows path.a1{animation-delay:-1s}.arrows path.a2{animation-delay:-.5s}.arrows path.a3{animation-delay:0s}
+/*# sourceMappingURL=index.37644a3e.css.map */
